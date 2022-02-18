@@ -46,6 +46,14 @@
                 </button>
                 <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
                     onclick="reset()">Reset</button>
+
+                <div class="hidden">
+                    <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+                        onclick="updateCounters('-')">-</button>
+                    <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+                        onclick="updateCounters('+')">+</button>
+                </div>
+
             </div>
         </header>
 
@@ -54,25 +62,29 @@
             <h2></h2>
         </main>
 
-        <footer class="grid grid-cols-4	gap-2">
-            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800">
-                <h2 class="text-lg">Counter #1</h2><span class="font-black text-5xl">0</span><button
-                    class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+        <footer class="flex items-center gap-2">
+            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800 flex-1">
+                <h2 class="text-lg">Counter #1</h2>
+                <span class="font-black text-5xl">0</span>
+                <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
                     onclick="incrementCount(this)">+</button>
             </div>
-            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800">
-                <h2 class="text-lg">Counter #2</h2><span class="font-black text-5xl">0</span><button
-                    class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800 flex-1">
+                <h2 class="text-lg">Counter #2</h2>
+                <span class="font-black text-5xl">0</span>
+                <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
                     onclick="incrementCount(this)">+</button>
             </div>
-            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800">
-                <h2 class="text-lg">Counter #3</h2><span class="font-black text-5xl">0</span><button
-                    class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800 flex-1">
+                <h2 class="text-lg">Counter #3</h2>
+                <span class="font-black text-5xl">0</span>
+                <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
                     onclick="incrementCount(this)">+</button>
             </div>
-            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800">
-                <h2 class="text-lg">Counter #4</h2><span class="font-black text-5xl">0</span><button
-                    class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
+            <div class="bg-neutral-200 rounded-md flex flex-col items-center p-10 gap-5 dark:bg-neutral-800 flex-1">
+                <h2 class="text-lg">Counter #4</h2>
+                <span class="font-black text-5xl">0</span>
+                <button class="bg-black text-white px-3 py-1 rounded dark:bg-white dark:text-black"
                     onclick="incrementCount(this)">+</button>
             </div>
         </footer>
