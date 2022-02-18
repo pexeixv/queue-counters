@@ -4,11 +4,14 @@ const h1 = document.querySelector('main h1')
 const h2 = document.querySelector('main h2')
 const localCounters = document.querySelectorAll('footer span')
 
-const incrementCount = that => {
+function incrementCount(that) {
     h1.innerText = ++counter
     h2.innerText = that.previousSibling.previousSibling.innerText
     that.previousSibling.innerText = counter
     writeToLocalStorage()
+    const counterNo = h2.innerText.replace('Counter #', '')
+    const voice = `Token number ${counter}, please proceed to counter number ${counterNo}.`
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(voice))
 }
 
 const reset = () => {
