@@ -28,3 +28,7 @@ Saw a counter software being used at a vaccination center, which guides token nu
 
 - [Tailwind CSS](https://tailwindcss.com/) as styling framework.
 - [Javascript Speech Synthesis](https://developer.mozilla.org/en-US/docs/Web/API/Window/speechSynthesis) for text-to-speech functionality.
+
+## License
+
+Licensed under [GNU GPLv3](LICENSE).
